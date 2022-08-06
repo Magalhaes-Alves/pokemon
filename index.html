@@ -11,62 +11,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="src/css/reset.css">
+
+    <link rel="stylesheet" href="src/css/estilo.css">
+
+    <link rel="stylesheet" href="src/css/responsivo.css">
 </head>
 
 <body>
-    <header>
-        <img src="src/imagens/pokebola.png" alt="foto de uma pokebola" >
-        <h1>Pokedex</h1>
+    <header class="cabecalho">
+        <img src="src/imagens/pokebola.png" alt="foto de uma pokebola" class="pokebola" >
+        <h1 class="titulo">Pokedex</h1>
     </header>
-    <main>
-        <button>
+    <main class="pokemon-slider">
+        <button class="btn-seta btn-voltar">
             <img src="src/imagens/seta.png" alt="seta próximo">
-        </button>
-        <button>
-            <img src="src/imagens/seta.png" alt="seta próximo">
-        </button>
-        
-        <ul>
-            <li>
-                <div>
-                    <h2>Pikachu</h2>
-                    <p>HP 300</p>
+        </button>    
+        <ul class="lista-pokemon">
+            <li class="cartao selecionado fundo-1">
+                <div class="informacoes">
+                    <h2 class="nome">Pikachu</h2>
+                    <p class="hp">HP 300</p>
                 </div>
-                <div>
-                    <h3>Descrição</h3>
-                    <p>Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.</p>
+                <div class="container-imagem">
+                    <img class="imagem-poke" src="src/imagens/pikachu.png" alt="Foto pokemon pikachu">
                 </div>
-                <div>
-                    <img src="src/imagens/pikachu.png" alt="Foto pokemon pikachu">
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.</p>
                 </div>
             </li>
-                <div>
-                    <h2>Mewtho</h2>
-                    <p>HP 1500</p>
+            <li class="cartao fundo-3">
+                <div class="informacoes">
+                    <h2 class="nome">Mewtho</h2>
+                    <p class="hp">HP 1500</p>
                 </div>
-                <div>
-                    <h3>Descrição</h3>
-                    <p>
-                        Its DNA is almost the same as Mew's. However, its size and disposition are vastly different.</p>
+                <div class="container-imagem">
+                    <img class="imagem-poke" src="src/imagens/mewtwo.png" alt="Imagem do pokemon Mewtwo">
                 </div>
-                <div>
-                    <img src="src/imagens/mewtwo.png" alt="Imagem do pokemon Mewtwo">
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Its DNA is almost the same as Mew's. However, its size and disposition are vastly different.</p>
                 </div>
-            <li>
-                <div>
-                    <h2>Charizard</h2>
-                    <p>HP 1000</p>
+            </li>
+            <li class="cartao fundo-2">
+                <div class="informacoes">
+                    <h2 class="nome">Charizard</h2>
+                    <p class="hp">HP 1000</p>
                 </div>
-                <div>
-                    <h3>Descrição</h3>
-                    <p>
+                <div class="container-imagem">
+                    <img class="imagem-poke" src="src/imagens/charizard.png" alt="Imagem do pokemon Charizard">
+                </div>
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">
                         It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames. </p>
-                </div>
-                <div>
-                    <img src="src/imagens/charizard.png" alt="Imagem do pokemon Charizard">
                 </div>
             </li>
         </ul>
+        <button class="btn-seta">
+            <img src="src/imagens/seta.png" alt="seta próximo">
+        </button>
     </main>
 </body>
 </html>
